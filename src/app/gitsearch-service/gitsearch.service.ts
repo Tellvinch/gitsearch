@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import "rxjs-compat";
-import { environment }
+import { environment } from 'src/environments/environment'
 
 @Injectable({
   providedIn: 'root'
@@ -16,4 +16,9 @@ this.username="Tellvinch"
   lethalinfo(){
     return this.Http.get(environment.apiurl + this.username + "?access_token=" + environment.apikey).map(result =>result)
   }
+  gitRepos() {
+    return this.Http.get(environment.apiurl + this.username + "/repos" + "?access_token=" + environment.apikey).map(result => result)
+    }
+  
+
 }

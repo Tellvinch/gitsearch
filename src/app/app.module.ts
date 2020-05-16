@@ -10,6 +10,7 @@ import { RepoComponent } from './repo/repo.component';
 import { UserComponent } from './user/user.component';
 import { UnderlineDirective } from './underline.directive';
 import { TimePipe } from './time.pipe';
+import { NotFoundComponent } from './not-found/not-found.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { TimePipe } from './time.pipe';
     RepoComponent,
     UserComponent,
     UnderlineDirective,
-    TimePipe
+    TimePipe,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,
