@@ -8,6 +8,8 @@ import { GitsearchFormComponent } from './gitsearch-form/gitsearch-form.componen
 import { NavComponent } from './nav/nav.component';
 import { RepoComponent } from './repo/repo.component';
 import { UserComponent } from './user/user.component';
+import { UnderlineDirective } from './underline.directive';
+import { TimePipe } from './time.pipe';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { UserComponent } from './user/user.component';
     GitsearchFormComponent,
     NavComponent,
     RepoComponent,
-    UserComponent
+    UserComponent,
+    UnderlineDirective,
+    TimePipe
   ],
   imports: [
     BrowserModule,
