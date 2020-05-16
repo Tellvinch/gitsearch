@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { HttpClient } from "@angular/common/http";
+import { GitsearchService } from "../gitsearch-service/gitsearch.service";
 
 @Component({
   selector: 'app-gitsearch',
@@ -6,8 +8,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./gitsearch.component.css']
 })
 export class GitsearchComponent implements OnInit {
-
-  constructor() { }
+  user:any=[];
+  username:string
+  constructor(private Http:HttpClient, public GitsearchService: GitsearchService) { 
+    this.GitsearchService.lethalinfo().subscribe(result=>{this.user=result})
+  }
 
   ngOnInit(): void {
   }
