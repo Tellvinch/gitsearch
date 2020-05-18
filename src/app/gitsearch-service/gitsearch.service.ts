@@ -19,6 +19,14 @@ this.username="Tellvinch"
   gitRepos() {
     return this.Http.get(environment.apiurl + this.username + "/repos" + "?access_token=" + environment.apikey).map(result => result)
     }
-  
 
+  updateProfile(username:string){
+      this.username = username
+  
+  }
+  getProfileInfo(){
+    interface ApiResponse{
+    username: string;
 }
+  }
+} 

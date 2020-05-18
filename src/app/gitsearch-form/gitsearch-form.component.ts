@@ -19,7 +19,7 @@ export class GitsearchFormComponent implements OnInit {
     this.GitsearchService.lethalinfo().subscribe(result=>{this.user=result})
   }
 
-  ngOnInit(): void {
+  ngOnInit() {
   }
 
 }
