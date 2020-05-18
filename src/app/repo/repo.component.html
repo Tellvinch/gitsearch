@@ -1,21 +1,19 @@
 <div class="col-md-8 card">
         
-              <div class="head">
-                  <h3>Repositories</h3>
-              </div>
-              <div  *ngFor="let repo of repos ">
-                  <h3>
-                      Title: {{repo.name}} <a href="{{repo.html_url}} " target="_blank " class="btn btn-md btn-warning pull-right ">View this project on github</a>
-                  </h3>
-                  <p style="font-size: 20px; "> Description: {{repo.description|titlecase}}</p>
-                  <hr style="height:2px;width:50%;color:gray;background-color:gray">
-                  <ul>
-                      <li style=" font-size: 20px; float: left; ">
-                          {{repo.language}}
-                      </li>
-                  </ul>
-              </div>
-          
-        </div>
-
-
+  <div class="head">
+      <h3>Repositories</h3>
+  </div>
+  <div  *ngFor="let repo of repos ">
+      <h3>
+          <strong>Name:</strong>{{repo.name}} 
+          <br>
+          <a href="{{repo.html_url}} " target="_blank " class="btn btn-md btn-info pull-right ">Github</a>
+      </h3>
+      <p style="font-size: 20px; "> <strong>Description:</strong> {{repo.description}}</p>
+      <ul>
+          <li style=" font-size: 20px; float: left; ">
+              {{repo.language}}
+          </li>
+      </ul>
+  </div>
+</div>

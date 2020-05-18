@@ -18,10 +18,24 @@ export class GitsearchComponent implements OnInit {
   repos: any = [];
   username:string
   constructor(private Http:HttpClient, public GitsearchService: GitsearchService) { 
-    this.GitsearchService.lethalinfo().subscribe(result=>{this.user=result})
+    // this.GitsearchService.lethalinfo().subscribe(result=>{this.user=result})
   }
 
-  ngOnInit(): void {
+
+ 
+
+  ngOnInit(){
+    this.GitsearchService.lethalinfo().subscribe(res => {
+      this.user = res;
+    })
+    this.GitsearchService.gitRepos()
+      .subscribe(data => {
+        this.repos = data;
+      })
+      this.GitsearchService.gitRepos()
+      .subscribe(data => {
+        this.repos = data;
+      })
   }
 
 }
