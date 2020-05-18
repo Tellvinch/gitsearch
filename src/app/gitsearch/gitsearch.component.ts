@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from "@angular/common/http";
 import { GitsearchService } from "../gitsearch-service/gitsearch.service";
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-gitsearch',
@@ -8,6 +9,11 @@ import { GitsearchService } from "../gitsearch-service/gitsearch.service";
   styleUrls: ['./gitsearch.component.css']
 })
 export class GitsearchComponent implements OnInit {
+
+  // goToUrl(user){
+  //   this.router.navigate(['/user'])
+  // }
+
   user:any=[];
   username:string
   constructor(private Http:HttpClient, public GitsearchService: GitsearchService) { 

@@ -9,9 +9,9 @@ import { RepoComponent } from './repo/repo.component';
 
 const routes: Routes = [
   { path: 'gitsearch', component: GitsearchComponent},
-  { path:'**', component:NotFoundComponent},
   { path: 'user', component: UserComponent},
   { path: 'repo', component: RepoComponent},
+  { path:'**', component:NotFoundComponent},
 
 ];
 
