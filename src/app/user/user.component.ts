@@ -15,7 +15,6 @@ export class UserComponent implements OnInit {
   repos: any = [];
   username:string
   constructor(private Http:HttpClient, public GitsearchService: GitsearchService) { 
-    // this.GitsearchService.lethalinfo().subscribe(result=>{this.user=result})
   }
 
 
