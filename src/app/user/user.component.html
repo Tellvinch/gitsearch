@@ -1,5 +1,24 @@
-<div class="jumbotron">
-    <h1 class="display-4 text-center">User</h1>
-    <hr class="my-4">
-    <p class="lead text-center">An Angular app</p>
+<div class="row">
+  <div class="col-md-8">
+    <div class="card">
+      <p>USER</p>
+      <img
+        src="{{ user.avatar_url }} "
+        alt="github profile pic "
+        
+      />
+      <p>{{ user.name }}</p>
+
+      <h4>
+        {{ user.name }} has {{ user.followers }} Followers and
+        {{ user.public_repos }} Public Repositories
+      </h4>
+
+      <p>
+        <a href="{{ user.html_url }} " target="_blank " class="btn btn-info"
+          >Github</a
+        >
+      </p>
+    </div>
   </div>
+</div>
