@@ -1,3 +1,5 @@
+<a href="https://codebeat.co/projects/github-com-tellvinch-gitsearch-gh-pages"><img alt="codebeat badge" src="https://codebeat.co/badges/41dbe9b8-2682-4d95-b04e-dcb2630b6a5d" /></a>
+
 # Gitsearch
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.4.A web application that enables you to search your github and repositories
